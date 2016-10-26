@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import { Button, Card, Image, Icon } from 'semantic-ui-react'
+import { Button, Card, Image, Icon, Header } from 'semantic-ui-react'
 
 
 class About extends Component {
   render() {
     return (
       <div>
-        <h2>Created by these guys...</h2>
+
+        <Header as='h2' icon textAlign='center'>
+          <Icon name='diamond' />
+          <Header.Content>
+            About
+          </Header.Content>
+        </Header>
+        <Image centered size='large' src='http://semantic-ui.com/images/wireframe/centered-paragraph.png' id='about-header' />
 
         <Card.Group>
           <Card centered raised>

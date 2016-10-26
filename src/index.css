@@ -17,3 +17,7 @@ body {
   margin: 0 auto;
   display: block;
 }
+
+#about-header {
+  margin-bottom: 25px;
+}
