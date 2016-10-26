@@ -9,7 +9,7 @@ class About extends Component {
         <h2>Created by these guys...</h2>
 
         <Card.Group>
-          <Card>
+          <Card centered raised>
             <Card.Content>
               <Image floated='right' size='mini' src='http://semantic-ui.com/images/avatar/large/steve.jpg' />
               <Card.Header>
@@ -33,7 +33,7 @@ class About extends Component {
               </div>
             </Card.Content>
           </Card>
-          <Card>
+          <Card centered raised>
             <Card.Content>
               <Image floated='right' size='mini' src='http://semantic-ui.com/images/avatar2/large/molly.png' />
               <Card.Header>
@@ -57,7 +57,7 @@ class About extends Component {
               </div>
             </Card.Content>
           </Card>
-          <Card>
+          <Card centered raised>
             <Card.Content>
               <Image floated='right' size='mini' src='http://semantic-ui.com/images/avatar/large/jenny.jpg' />
               <Card.Header>
