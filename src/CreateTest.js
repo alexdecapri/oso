@@ -7,7 +7,7 @@ class CreateTest extends Component {
     return (
       <div>
 
-        <Table celled>
+        <Table celled striped>
 
           <Table.Header>
             <Table.Row>
