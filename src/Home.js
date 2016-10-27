@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Button, Divider, Modal, Icon, Form, Checkbox } from 'semantic-ui-react'
+import { Segment, Button, Divider, Modal, Icon, Form, Checkbox, Message } from 'semantic-ui-react'
 import logo from './oso.svg';
 
 class Home extends Component {
@@ -97,6 +97,10 @@ class Home extends Component {
               Exit
             </Button>
           </Modal.Actions>
+          <Message attached='bottom' warning>
+            <Icon name='help' />
+            Already signed up?&nbsp;<a href='#'>Login here</a>&nbsp;instead.
+          </Message>
         </Modal>
 
       </div>
