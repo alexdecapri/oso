@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Segment, Button, Divider } from 'semantic-ui-react'
-import logo from './oso2.svg';
+import logo from './oso.svg';
 
 class Home extends Component {
   render() {
