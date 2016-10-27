@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Icon, Label, Menu, Table, Button } from 'semantic-ui-react'
+import { Icon, Label, Menu, Table, Button, Input } from 'semantic-ui-react'
 
+
+let style = {
+  width: '100%'
+}
 
 class CreateTest extends Component {
   render() {
@@ -21,21 +25,39 @@ class CreateTest extends Component {
           <Table.Body>
             <Table.Row>
               <Table.Cell>1</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>2</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>3</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
+              <Table.Cell>
+                <Input style={style} />
+              </Table.Cell>
             </Table.Row>
           </Table.Body>
 
