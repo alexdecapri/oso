@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Button, Card, Image, Icon, Header } from 'semantic-ui-react'
+import { Button, Card, Image, Icon, Header, Container } from 'semantic-ui-react'
 
+let style = {
+  marginBottom: "15px"
+}
 
 class About extends Component {
   render() {
@@ -13,7 +16,10 @@ class About extends Component {
             About
           </Header.Content>
         </Header>
-        <Image centered size='large' src='http://semantic-ui.com/images/wireframe/centered-paragraph.png' id='about-header' />
+        <Container text textAlign='center'>
+          <Header as='h3'>Created By the QA Team at Avasis</Header>
+          <p style={style}>Oso is an application built for QA teams. It stores tests, enables quick creation of new plans, and allows all users to obtain real-time information on the status of each test.</p>
+        </Container>
 
         <Card.Group>
           <Card centered raised>
