@@ -18,7 +18,7 @@ class About extends Component {
         <Header as='h2' icon textAlign='center'>
           <Icon name='diamond' style={style.icon} />
           <Header.Content>
-            About
+           About
           </Header.Content>
         </Header>
         <Container text textAlign='center'>
