@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { Button, Card, Image, Icon, Header, Container } from 'semantic-ui-react'
 
 let style = {
-  marginBottom: "15px"
+  spacing: {
+    marginBottom: "40px"
+  },
+  icon: {
+    marginTop: "20px"
+  }
 }
 
 class About extends Component {
@@ -11,14 +16,14 @@ class About extends Component {
       <div>
 
         <Header as='h2' icon textAlign='center'>
-          <Icon name='diamond' />
+          <Icon name='diamond' style={style.icon} />
           <Header.Content>
             About
           </Header.Content>
         </Header>
         <Container text textAlign='center'>
           <Header as='h3'>Created By the QA Team at Avasis</Header>
-          <p style={style}>Oso is an application built for QA teams. It stores tests, enables quick creation of new plans, and allows all users to obtain real-time information on the status of each test.</p>
+          <p style={style.spacing}>Oso is an application built for QA teams. It stores tests, enables quick creation of new plans, and allows all users to obtain real-time information on the status of each test.</p>
         </Container>
 
         <Card.Group>
