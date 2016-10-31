@@ -7,6 +7,11 @@ let style = {
 }
 
 class CreateTest extends Component {
+  constructor(props) {
+    super(props);
+    this.addRow = this.addRow.bind(this);
+  }
+
   render() {
     return (
       <div>
@@ -65,8 +70,8 @@ class CreateTest extends Component {
             <Table.Row>
               <Table.HeaderCell />
               <Table.HeaderCell colSpan='3'>
-                <Button floated='right' icon labelPosition='left' primary size='small'>
-                  <Icon name='add circle' /> Add Step
+                <Button onClick={this.addRow} floated='right' icon labelPosition='left' primary size='small'>
+                  <Icon name='add circle'/> Add Step
                 </Button>
                 <Button size='small' color='green'>Save</Button>
                 <Button size='small'>Cancel</Button>
@@ -78,6 +83,24 @@ class CreateTest extends Component {
 
 
       </div>
+    )
+  }
+
+  addRow() {
+    console.log("Click working.");
+    return (
+      <Table.Row>
+        <Table.Cell>4</Table.Cell>
+        <Table.Cell>
+          <Input style={style} />
+        </Table.Cell>
+        <Table.Cell>
+          <Input style={style} />
+        </Table.Cell>
+        <Table.Cell>
+          <Input style={style} />
+        </Table.Cell>
+      </Table.Row>
     )
   }
 }
